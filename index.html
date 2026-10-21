@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yadveer - Portfolio</title>
+    <meta name="description" content="Yadveer is a Computer Science undergraduate at Guru Nanak Dev Engineering College, interested in practical software development and data analysis.">
+    <meta name="theme-color" content="#101a2b">
+    <title>Yadveer | Computer Science Undergraduate</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,7 +17,7 @@
             <div class="nav-logo">
                 <h2>Yadveer</h2>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
                 </li>
@@ -26,17 +28,23 @@
                     <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <div class="nav-toggle">
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -44,17 +52,19 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
+                <p class="eyebrow">COMPUTER SCIENCE · SOFTWARE · DATA</p>
                 <h1>Hello, I'm <span class="highlight">Yadveer</span></h1>
-                <h2>Full Stack Developer</h2>
-                <p>I create beautiful, responsive websites and web applications using modern technologies.</p>
+                <h2>Computer Science Undergraduate</h2>
+                <p>Building practical software and exploring how data can solve real-world problems.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="mailto:yadveer227he@gmail.com" class="btn btn-secondary">Contact Me</a>
                 </div>
+                <p class="hero-location"><i class="fas fa-location-dot"></i> Ahmadgarh, Punjab, India</p>
             </div>
             <div class="hero-image">
                 <div class="profile-pic">
-                    <img src="IMG_20240527_123344-removebg-preview.png" alt="Profile Picture">
+                    <img src="my.png" alt="Portrait of Yadveer">
                 </div>
             </div>
         </div>
@@ -68,29 +78,27 @@
         <div class="container">
             <div class="section-header">
                 <h2>About Me</h2>
-                <p>Get to know more about me and my journey</p>
+                <p>A little about what I’m learning and building</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>I'm a passionate developer who loves creating digital experiences</h3>
-                    <p>With a strong foundation in both front-end and back-end technologies, I enjoy building applications that are not only functional but also provide great user experiences. I'm always eager to learn new technologies and tackle challenging problems.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h4>50+</h4>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h4>3+</h4>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h4>20+</h4>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
+                    <h3>Curious about software, data, and real-world problem solving.</h3>
+                    <p>I'm a Computer Science undergraduate with foundational knowledge of Python, SQL, and programming fundamentals. I enjoy developing practical applications, learning new technologies, and collaborating with a team to build useful solutions.</p>
+                    <p>My work spans full-stack project development and customer churn analysis—from designing relational data structures to presenting insights through dashboards.</p>
                 </div>
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/500x600/667eea/ffffff?text=About+Image" alt="About Me">
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <span class="highlight-index">01</span>
+                        <div><h4>Software development</h4><p>Web applications with frontend and backend modules.</p></div>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-index">02</span>
+                        <div><h4>Data analysis</h4><p>Turning structured data into useful, measurable insights.</p></div>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-index">03</span>
+                        <div><h4>Team collaboration</h4><p>Building functional solutions in a collaborative environment.</p></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,52 +109,61 @@
         <div class="container">
             <div class="section-header">
                 <h2>My Skills</h2>
-                <p>Technologies and tools I work with</p>
+                <p>Tools and technologies from my projects and training</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and modern HTML features</p>
+                    <h3>Languages</h3>
+                    <p>Python · SQL · HTML5 · CSS3</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>CSS3</h3>
-                    <p>Responsive design and modern CSS techniques</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>ES6+ features and modern JavaScript</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>React</h3>
-                    <p>Component-based UI development</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <h3>Node.js</h3>
-                    <p>Server-side JavaScript development</p>
+                    <h3>Data Libraries</h3>
+                    <p>NumPy · Pandas · Matplotlib</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3>Databases</h3>
-                    <p>MongoDB, PostgreSQL, and MySQL</p>
+                    <h3>Database</h3>
+                    <p>MySQL · Relational schemas · SQL analysis</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Tools</h3>
+                    <p>Git · GitHub · VS Code · Power BI · Excel</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training & Experience</h2>
+                <p>Learning through hands-on, collaborative development</p>
+            </div>
+            <article class="timeline-card">
+                <div class="timeline-marker"><i class="fas fa-laptop-code"></i></div>
+                <div class="timeline-content">
+                    <div class="timeline-heading">
+                        <div><p class="eyebrow">6 MONTHS</p><h3>Full Stack Development Training</h3></div>
+                        <span class="timeline-org">STEP GNDEC</span>
+                    </div>
+                    <ul>
+                        <li>Worked on end-to-end web development projects across frontend and backend modules.</li>
+                        <li>Collaborated in a team-based environment to build functional, scalable web solutions.</li>
+                    </ul>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -155,69 +172,89 @@
         <div class="container">
             <div class="section-header">
                 <h2>My Projects</h2>
-                <p>Some of my recent work</p>
+                <p>Software development and data analysis projects</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="image.png" alt="Project 1">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                    <div class="project-visual project-visual-app">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>WEB APPLICATION</span>
                     </div>
                     <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>A full-stack e-commerce platform built with React, Node.js, and MongoDB.</p>
+                        <p class="project-number">PROJECT 01</p>
+                        <h3>AchademiaLeave</h3>
+                        <p class="project-subtitle">Faculty Leave Management System</p>
+                        <p>A centralized portal for managing faculty leave requests, approvals, and leave balances across academic departments.</p>
+                        <ul class="project-points">
+                            <li>Implemented role-based access control with multi-tier administrative permissions.</li>
+                            <li>Designed MySQL relational schemas for leave applications and activity logs.</li>
+                        </ul>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Project+2" alt="Project 2">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>A responsive task management application with real-time updates.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Firebase</span>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Project+3" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>A beautiful weather dashboard with location-based forecasts.</p>
-                        <div class="project-tech">
+                            <span>MySQL</span>
                             <span>JavaScript</span>
-                            <span>API</span>
-                            <span>Chart.js</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Node.js</span>
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-visual project-visual-data">
+                        <i class="fas fa-chart-column"></i>
+                        <span>DATA ANALYSIS</span>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 02</p>
+                        <h3>Telecom Customer Churn Analysis</h3>
+                        <p>Analyzed 7,043 telecom customers to identify churn drivers, quantify revenue loss, and prioritize retention efforts.</p>
+                        <ul class="project-points">
+                            <li>Used SQL (CTEs, window functions) and Pandas; found that 28% of customers—primarily first-year, month-to-month subscribers—accounted for 55% of churn.</li>
+                            <li>Estimated ₹1.67M in annual revenue lost and ₹227K recoverable through targeted retention.</li>
+                            <li>Built a validated risk-scoring system and a 2-page Power BI dashboard.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>MySQL</span>
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Matplotlib</span>
+                            <span>Excel</span>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Recognition Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education & Recognition</h2>
+                <p>Academic foundation, certifications, and milestones</p>
+            </div>
+            <div class="education-grid">
+                <article class="education-card">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="eyebrow">2022 — 2026</p>
+                    <h3>B.Tech in Computer Science</h3>
+                    <p>Guru Nanak Dev Engineering College, Ludhiana</p>
+                    <div class="capstone">
+                        <span>FINAL YEAR PROJECT</span>
+                        <strong>DeepGuard</strong>
+                        <p>Deepfake video and image detector using a CNN-LSTM architecture.</p>
+                    </div>
+                </article>
+                <article class="education-card recognition-card">
+                    <div class="education-icon"><i class="fas fa-award"></i></div>
+                    <p class="eyebrow">CERTIFICATES & ACHIEVEMENTS</p>
+                    <ul class="recognition-list">
+                        <li><strong>Python</strong><span>Infosys Springboard</span></li>
+                        <li><strong>SQL for Data Science</strong><span>Great Learning</span></li>
+                        <li><strong>1st Position</strong><span>Department-level Major Project</span></li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -227,49 +264,35 @@
         <div class="container">
             <div class="section-header">
                 <h2>Get In Touch</h2>
-                <p>Let's work together on your next project</p>
+                <p>Have an opportunity or want to talk about a project?</p>
             </div>
-            <div class="contact-content">
+            <div class="contact-content contact-content-single">
                 <div class="contact-info">
-                    <h3>Let's talk about your project</h3>
-                    <p>I'm always interested in hearing about new opportunities and exciting projects. Whether you have a question or just want to say hello, I'd love to hear from you.</p>
+                    <h3>Let’s connect.</h3>
+                    <p>I’m eager to learn, contribute to a development team, and take on practical software and data challenges.</p>
                     <div class="contact-details">
-                        <div class="contact-item">
+                        <a class="contact-item" href="mailto:yadveer227he@gmail.com">
                             <i class="fas fa-envelope"></i>
                             <span>yadveer227he@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
+                        </a>
+                        <a class="contact-item" href="tel:+918264850789">
                             <i class="fas fa-phone"></i>
-                            <span>8264850789</span>
-                        </div>
+                            <span>+91 82648 50789</span>
+                        </a>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Ahmedgarh, India</span>
+                            <span>Ahmadgarh, Punjab, India</span>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/yadveer-yadveer-05a1112aa/" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/yadveer2" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://x.com/yadveer__01" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/yadveer__01" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yadveer-yadveer" class="social-link" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/yadveer2" class="social-link" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="contact-cta">
+                    <span>OPEN TO OPPORTUNITIES</span>
+                    <p>Let’s build something useful together.</p>
+                    <a href="mailto:yadveer227he@gmail.com" class="btn btn-primary">Send me an email <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -279,10 +302,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Yadveer. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> Yadveer. Built with purpose.</p>
                 <div class="footer-links">
                     <a href="#home">Home</a>
-                    <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
